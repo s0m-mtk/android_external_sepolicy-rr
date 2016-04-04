@@ -18,6 +18,7 @@ allow logd pstorefs:file r_file_perms;
 r_dir_file(logd, domain)
 
 allow logd kernel:system syslog_mod;
+allow logd fuse:file { write };
 
 control_logd(logd)
 
